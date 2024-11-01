@@ -2,7 +2,7 @@
 
 int main() {
     int temp[7], i, total = 0, above_30 = 0, hot, cold;
-    float average;
+    float avg;
 
     // Input temperatures
     for (i = 0; i < 7; i++) {
@@ -22,10 +22,10 @@ int main() {
         if (temp[i] < cold) cold = temp[i];
     }
 
-    average = (float) total / 7;
+    avg = (float) total / 7;
 
     // Output
-    printf("Average temperature: %.2f°C\n", average);
+    printf("Average temperature: %.2f°C\n", avg);
     printf("Hotest day temperature: %d°C\n", hot);
     printf("Coldest day temperature: %d°C\n", cold);
     printf("Days above 30°C: %d\n", above_30);
